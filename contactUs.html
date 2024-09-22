@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <!-- Section 1: Navabar -->
+ <header>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm w-100 fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="logo.png" alt="CreamyScoops Logo" width="100" height="100">
+                </a>
+                <h1 class="logo_name">CreamyScoops</h1>
+                <!-- Navbar Toggle for Mobile View -->
+                <button class="navbar-toggler hamburger" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Navbar Links and Buttons -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="menu.html">Menu</a>
+                        <a class="nav-link" href="aboutUs.html">AboutUs</a>
+                        <a class="nav-link" href="Galllery.html">Gallery</a>
+                        <a class="nav-link" href="contactUs.html">ContactUs</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+    <!-- Section 2: Contact Form and Google Map -->
+    <section class="container-fluid mt-5 pt-5 box2">
+        <div class="row">
+            <!-- Contact Form -->
+            <div class="col-lg-6">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn_cart">Submit</button>
+                </form>
+            </div>
+
+            <!-- Google Map -->
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <h2>Find Us</h2>
+                <div id="map" style="width: 100%; height: 300px;">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12632.456888542033!2d-122.08244066498796!3d37.42398109523359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5a6ec8db1c1%3A0x4b2e2ec6c97b04d9!2sGoogleplex!5e0!3m2!1sen!2sus!4v1619097384693!5m2!1sen!2sus" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="row mt-5">
+            <div class="col text-center">
+                <h2>Contact Details</h2>
+                <p><strong>Address:</strong> 123 CreamyScoops Lane, Dessert City, Sweetland</p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Email:</strong> info@creamyscoops.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS (for responsiveness and interactivity) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

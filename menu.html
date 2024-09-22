@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreamyScoops Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .menu-section {
+            margin-top: 100px; /* Space for fixed navbar */
+        }
+        .filter-bar {
+            margin-bottom: 20px;
+        }
+        .card {
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Section 1: Navbar -->
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-sm w-100 fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="logo.png" alt="CreamyScoops Logo" width="100" height="100">
+                    </a>
+                    <h1 class="logo_name">CreamyScoops</h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="menu.html">Menu</a>
+                            <a class="nav-link" href="aboutUs.html">About Us</a>
+                            <a class="nav-link" href="Galllery.html">Gallery</a>
+                            <a class="nav-link" href="contactUs.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container-fluid menu-section" id="box">
+        <h2 class="text-center mb-4">Our Menu</h2>
+
+        <!-- Search Bar -->
+        <div class="filter-bar text-center">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for items..." onkeyup="filterItems()">
+        </div>
+
+    <!-- Cones Section -->
+<h3>Ice Cream Cones</h3>
+<div class="row" id="menuItems">
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <img src="vanilla.jpg" class="card-img-top" alt="Vanilla Cone">
+            <div class="card-body">
+                <h5 class="card-title">Vanilla Cone</h5>
+                <p class="card-text">Classic vanilla ice cream served in a crispy cone.</p>
+                <p class="card-price">Price: PKR 150</p>
+                <a href="#" class="btn_cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <img src="rich_chocolate.avif" class="card-img-top" alt="Chocolate Cone">
+            <div class="card-body">
+                <h5 class="card-title">Chocolate Cone</h5>
+                <p class="card-text">Rich chocolate ice cream in a delicious cone.</p>
+                <p class="card-price">Price: PKR 160</p>
+                <a href="#" class="btn_cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <img src="strawberry.png" class="card-img-top" alt="Strawberry Cone">
+            <div class="card-body">
+                <h5 class="card-title">Strawberry Cone</h5>
+                <p class="card-text">Sweet strawberry ice cream topped with fresh strawberries.</p>
+                <p class="card-price">Price: PKR 170</p>
+                <a href="#" class="btn_cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <img src="coffee.webp" class="card-img-top" alt="Coffee Cone">
+            <div class="card-body">
+                <h5 class="card-title">Coffee Cone</h5>
+                <p class="card-text">Rich coffee ice cream in a crispy cone.</p>
+                <p class="card-price">Price: PKR 180</p>
+                <a href="#" class="btn_cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <img src="pistachio.webp" class="card-img-top" alt="Pistachio Cone">
+            <div class="card-body">
+                <h5 class="card-title">Pistachio Cone</h5>
+                <p class="card-text">Creamy pistachio ice cream topped with nuts.</p>
+                <p class="card-price">Price: PKR 190</p>
+                <a href="#" class="btn_cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <img src="cookies_cream.jpg" class="card-img-top" alt="Cookies and Cream Cone">
+            <div class="card-body">
+                <h5 class="card-title">Cookies and Cream Cone</h5>
+                <p class="card-text">Delicious cookies and cream ice cream in a cone.</p>
+                <p class="card-price">Price: PKR 200</p>
+                <a href="#" class="btn_cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <img src="bownie_batter.webp" class="card-img-top" alt="Brownie Batter Cone">
+            <div class="card-body">
+                <h5 class="card-title">Brownie Batter Cone</h5>
+                <p class="card-text">Indulgent brownie batter ice cream in a cone.</p>
+                <p class="card-price">Price: PKR 220</p>
+                <a href="#" class="btn_cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="card">
+            <img src="butter_pecan.webp" class="card-img-top" alt="Butter Pecan Cone">
+            <div class="card-body">
+                <h5 class="card-title">Butter Pecan Cone</h5>
+                <p class="card-text">Rich butter pecan ice cream in a crispy cone.</p>
+                <p class="card-price">Price: PKR 210</p>
+                <a href="#" class="btn_cart">Add to Cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Scoops Section -->
+        <h3>Scoops</h3>
+        <div class="row" id="menuItems">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="chocolate_scoop.webp" class="card-img-top" alt="Chocolate Scoop">
+                    <div class="card-body">
+                        <h5 class="card-title">Chocolate Scoop</h5>
+                        <p class="card-text">A scoop of creamy chocolate ice cream.</p>
+                        <p class="card-price">Price: PKR 200</p>
+                        <a href="#" class="btn_cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="vanilla_scoop.webp" class="card-img-top" alt="Vanilla Scoop">
+                    <div class="card-body">
+                        <h5 class="card-title">Vanilla Scoop</h5>
+                        <p class="card-text">A scoop of classic vanilla ice cream.</p>
+                        <p class="card-price">Price: PKR 180</p>
+                        <a href="#" class="btn_cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="pista_scoop.jpg" class="card-img-top" alt="Pistachio Scoop">
+                    <div class="card-body">
+                        <h5 class="card-title">Pistachio Scoop</h5>
+                        <p class="card-text">Nutty pistachio ice cream with a creamy texture.</p>
+                        <p class="card-price">Price: PKR 220</p>
+                        <a href="#" class="btn_cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Offers Section -->
+        <h3>Special Offers</h3>
+        <div class="row" id="menuItems">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="four_scoops.webp" class="card-img-top" alt="Special Offer 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Family Pack</h5>
+                        <p class="card-text">A selection of 4 ice cream scoops for the family.</p>
+                        <p class="card-price">Price: PKR 800</p>
+                        <a href="#" class="btn_cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="birthday_deal.jpg" class="card-img-top" alt="Special Offer 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Birthday Special</h5>
+                        <p class="card-text">Celebrate with a large cake and ice cream combo.</p>
+                        <p class="card-price">Price: PKR 1200</p>
+                        <a href="#" class="btn_cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="2_scoops.webp" class="card-img-top" alt="Special Offer 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Happy Hour</h5>
+                        <p class="card-text">Buy 1 scoop, get 1 free every Friday!</p>
+                        <p class="card-price">Price: PKR 200</p>
+                        <a href="#" class="btn_cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function filterItems() {
+            const input = document.getElementById('searchInput');
+            const filter = input.value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+
+            cards.forEach(card => {
+                const title = card.querySelector('.card-title').textContent.toLowerCase();
+                const description = card.querySelector('.card-text').textContent.toLowerCase();
+                if (title.includes(filter) || description.includes(filter)) {
+                    card.parentElement.style.display = '';
+                } else {
+                    card.parentElement.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
